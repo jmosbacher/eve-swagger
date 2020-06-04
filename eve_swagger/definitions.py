@@ -100,6 +100,10 @@ def _field_props(rules, dr_sources, prefix):
         "multipolygon": ("geometry", "MultiPolygon"),
         "geometrycollection": ("geometry", "GeometryCollection"),
     }
+    if app.config["RETURN_MEDIA_AS_BASE64_STRING"]:
+        map["media"] = ("string", "base64")
+    else:
+        map["media"] = ("string",)
 
     eve_type = rules.get("type")
     if eve_type is None:
