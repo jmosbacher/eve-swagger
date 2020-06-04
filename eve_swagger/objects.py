@@ -99,15 +99,18 @@ def parameters():
         if "SWAGGER_EXAMPLE_FIELD_REMOVE" not in app.config:
             p["example"] = example
         ptype = ""
-        if eve_type == "objectid" or eve_type == "datetime":
+        if eve_type in ["objectid", "datetime", "media"]:
             ptype = "string"
         elif eve_type == "float":
             ptype = "number"
         else:
             # TODO define default
             pass
-
+        
         p["schema"] = {"type": ptype}
+        if eve_type == "media" and app.config["RETURN_MEDIA_AS_BASE64_STRING"]:
+            p["schema"]["format"] = "base64"
+
         parameters[title + "_" + lookup_field] = p
 
         # additional_lookup
