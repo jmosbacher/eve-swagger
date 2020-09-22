@@ -126,6 +126,7 @@ def get_ref_query():
         {"$ref": "#/components/parameters/query__sort"},
         {"$ref": "#/components/parameters/query__page"},
         {"$ref": "#/components/parameters/query__max_results"},
+        {"$ref": "#/components/parameters/query__version"},
     ]
 
 
