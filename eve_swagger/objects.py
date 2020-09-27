@@ -172,13 +172,7 @@ def _query_parameters():
     r["description"] = "the max results query parameter"
     r["schema"] = {"type": "integer", "example": 25}
     params["query__max_results"] = r
-    
-    r = OrderedDict()
-    r["in"] = "query"
-    r["name"] = app.config["VERSION_PARAM"]
-    r["description"] = "the version query parameter"
-    r["schema"] = {"type": "string", "example": 1}
-    params["query__version"] = r
+
     return params
 
 
