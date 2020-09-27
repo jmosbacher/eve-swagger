@@ -6,6 +6,39 @@ Here you can see the full list of changes between each Eve-Swagger release.
 In Development
 --------------
 
+- hic sunt leones.
+
+Released
+--------
+
+Version 0.1.2
+~~~~~~~~~~~~~
+
+Released on September 19, 2020.
+
+- Fix: When using a non-empty ``url_prefix``, it should be also added to ``spec_url`` (`#112`_)
+
+.. _`#112`: https://github.com/pyeve/eve-swagger/pull/111
+
+
+Version 0.1.1
+~~~~~~~~~~~~~
+
+Released on August 6, 2020.
+
+- Fix: linting and CI errors (`#111`_)
+- Fix: templates missing from PyPI (`#109`_)
+
+.. _`#111`: https://github.com/pyeve/eve-swagger/pull/111
+.. _`#109`: https://github.com/pyeve/eve-swagger/issues/109
+
+Version 0.1
+~~~~~~~~~~~
+
+Released on July 6, 2020.
+
+- New: add meta links to response schemas (`#107`_)
+- Fix: projections not included in GET paramenters (`#106`_)
 - Fix: deprecation warning for ABC import (`#100`_)
 - Fix: media type not converted to OpenApi 3 compatible type (`#102`_)
 - Add ``get_swagger_blueprint`` helper method (`#91`_)
@@ -26,6 +59,8 @@ In Development
 - Add support for resource-level ``example`` definition (`#69`_)
 - Add stale-bot to close stale issues and pull requests (`#68`_)
 
+.. _`#107`: https://github.com/pyeve/eve-swagger/issues/107
+.. _`#106`: https://github.com/pyeve/eve-swagger/issues/106
 .. _`#100`: https://github.com/pyeve/eve-swagger/pull/100
 .. _`#102`: https://github.com/pyeve/eve-swagger/issues/102
 .. _`#91`: https://github.com/pyeve/eve-swagger/pull/91
@@ -41,9 +76,6 @@ In Development
 .. _`#70`: https://github.com/pyeve/eve-swagger/pull/70
 .. _`#69`: https://github.com/pyeve/eve-swagger/issues/69
 .. _`#68`: https://github.com/pyeve/eve-swagger/pull/68
-
-Released
---------
 
 Version 0.0.11
 ~~~~~~~~~~~~~~
